@@ -37,9 +37,9 @@ class Identity:
     def login(self):
         url = "https://dxtrade.ftmo.com/api/auth/login"
         payload = json.dumps({
-            "username": "1210003069",
-            "password": "2K2=WJ3^6rj5",
-            "vendor": "ftmo"
+            "username": self.username,
+            "password": self.password,
+            "vendor": self.server
         })
         headers = {
             'content-type': 'application/json',
